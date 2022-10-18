@@ -1,5 +1,5 @@
 # ot-profiles
-OT Profiles aligned with SEI ETF initiative and IEC 62443
+OT Profiles aligned with SEI ETF initiative and IEC 62443-5
 
 Licensed under CC BY 3.0 US
 
