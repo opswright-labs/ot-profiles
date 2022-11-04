@@ -1,0 +1,217 @@
+{
+  "title": "OT Profiles (OTP) - Substation",
+  "specVersion": "0.1",
+  "serialNumber": "urn:uuid:5cc3d7d2-e659-4d07-8416-6a164dfc3a03",
+  "profileCategory": "Electric Power",
+  "profileType": "Substation",
+  "version": "0.1",
+  "comment": "Created from examples at https://secure-energy.inl.gov/secureenergy/wp-content/uploads/sites/6/2022/07/SEI-ETF-Reference-Architecture-for-Electric-Energy-OT-and-Profiles.pdf",
+  "license": "Apache 2.0",
+  "metadata": {
+    "timestamp": "2022-11-04T17:18:23Z",
+    "author": "Opswright, Inc.",
+    "tools":  {
+      "vendor": "Opswright, Inc",
+      "name": "otp-generator",
+      "version": "0.1"
+      }
+    },
+  "level 0":  {
+    "levelName": "Level 0 - Process Level",
+    "type": "level",
+    "devices": {
+      "device 1": "Sensors",
+      "device 2": "Indicators",
+      "device 3": "Breaker I/O",
+      "device 4": "CT/PT Merging Units",
+      "device 5": "NCITs Merging Units"
+      },
+    "functions":  {
+      "function 1": "Physical Process Interface"
+      },
+    "securityFeatures": {
+      "securityFeature 1": "Access Control Policies",
+      "securityFeature 2": "Device Hardening",
+      "securityFeature 3": "Security Logging",
+      "securityFeature 4": "Patch Management",
+      "securityFeature 5": "Malware Protection",
+      "securityFeature 6": "Data Integrity Protection",
+      "securityFeature 7": "IDS/IPS"
+      },
+    "participatingParties": {
+      "party 1": "OT Manager",
+      "party 2": "Eng/Designer",
+      "party 3": "Relay Tech",
+      "party 4": "Field Service Tech"
+      }
+    },
+  "level 1":  {
+    "levelName": "Level 1 - Subsystem Level",
+    "type": "level",
+    "devices": {
+      "device 1": "Protection",
+      "device 2": "Bay Controllers",
+      "device 3": "IEDs",
+      "device 4": "Monitoring"
+      },
+    "functions":  {
+      "function 1": "Data Acquisition",
+      "function 2": "Telemtry",
+      "function 3": "Process Control"
+      },
+    "securityFeatures": {
+      "securityFeature 1": "Access Control Policies",
+      "securityFeature 2": "Device Hardening",
+      "securityFeature 3": "Security Logging",
+      "securityFeature 4": "Patch Management",
+      "securityFeature 5": "Malware Protection",
+      "securityFeature 6": "Data Integrity Protection",
+      "securityFeature 7": "IDS/IPS"
+      },
+    "participatingParties": {
+      "party 1": "OT Manager",
+      "party 2": "Eng/Designer",
+      "party 3": "Relay Tech",
+      "party 4": "Field Service Tech"
+      }
+    },
+  "level 2":  {
+    "levelName": "Level 2 - Facility Level",
+    "type": "level",
+    "devices": {
+      "device 1": "RTU/Gateways",
+      "device 2": "Local HMIs",
+      "device 3": "Engineering Workstations"
+      },
+    "functions":  {
+      "function 1": "Process Data Conversion",
+      "function 2": "Local Control",
+      "function 3": "Asset Monitoring"
+      },
+    "securityFeatures": {
+      "securityFeature 1": "Access Control Policies",
+      "securityFeature 2": "Device Hardening",
+      "securityFeature 3": "Security Logging",
+      "securityFeature 4": "Patch Management",
+      "securityFeature 5": "Malware Protection",
+      "securityFeature 6": "Data Integrity Protection",
+      "securityFeature 7": "IDS/IPS"
+      },
+    "participatingParties": {
+      "party 1": "OT Manager",
+      "party 2": "Eng/Designer",
+      "party 3": "Relay Tech",
+      "party 4": "Field Service Tech"
+      }
+    },
+ "level 2.5 dmz":  {
+    "levelName": "Level 2.5 DMZ",
+    "type": "dmz",
+    "devices": {
+      "device 1": "Historian",
+      "device 2": "Backup Director",
+      "device 3": "Patch Server",
+      "device 4": "Remote Access/Jump Server"
+      },
+    "functions": {},
+    "securityFeatures": {},
+    "participatingParties": {}
+    },
+    "level 3":  {
+    "levelName": "Level 3 - Control Center Level",
+    "type": "level",
+    "devices": {
+      "device 1": "Operator Workstations",
+      "device 2": "SCADA/Application Servers",
+      "device 3": "Database Servers",
+      "device 4": "Domain Controllers",
+      "device 5": "I/O Servers"
+      },
+    "functions":  {
+      "function 1": "Internal Operational Communication"
+      },
+    "securityFeatures": {
+      "securityFeature 1": "Access Control Policies",
+      "securityFeature 2": "Management and Review",
+      "securityFeature 3": "Network Monitoring Devices",
+      "securityFeature 4": "Encryption Control",
+      "securityFeature 5": "SIEM",
+      "securityFeature 6": "IDS/IPS"
+      },
+    "participatingParties": {
+      "party 1": "OT Manager",
+      "party 2": "SCADA",
+      "party 3": "Operations and Maintenance",
+      "party 4": "EMS Support",
+      "party 5": "Remote Employees",
+      "party 6": "OT and IT Services",
+      "party 7": "Vendors"
+      }
+    },
+   "level 3.5 dmz":  {
+    "levelName": "Level 3.5 DMZ",
+    "type": "dmz",
+    "devices": {
+      "device 1": "Historian",
+      "device 2": "Backup Director",
+      "device 3": "Patch Server",
+      "device 4": "Remote Access/Jump Server"
+      },
+    "functions": {},
+    "securityFeatures": {}
+    },
+  "level 4":  {
+    "levelName": "Level 4 - Business/Enterprise Level",
+    "type": "level",
+    "devices": {
+      "device 1": "Web Servers",
+      "device 2": "Business Servers",
+      "device 3": "Enterprise Desktops",
+      "device 4": "Domain Controllers"
+      },
+    "functions":  {
+      "function 1": "Internal Business Communication"
+      },
+    "securityFeatures": {
+      "securityFeature 1": "Risk Assessment",
+      "securityFeature 2": "Security Awareness",
+      "securityFeature 3": "Security Training"
+      },
+    "participatingParties": {
+      "party 1": "IT Manager",
+      "party 2": "Business Strategy",
+      "party 3": "Planning"
+      }
+    },
+   "level 4.5 dmz":  {
+    "levelName": "Level 4.5 DMZ",
+    "type": "dmz",
+    "devices": {
+      "device 1": "Web Servers",
+      "device 2": "Email Servers",
+      "device 3": "Remote Access Server"
+      },
+    "functions": {},
+    "securityFeatures": {}
+    },
+  "level 5":  {
+    "levelName": "Level 5 - Internet/Cloud Level",
+    "type": "level",
+    "devices": {
+      "device 1": "Web Servers",
+      "device 2": "Email Servers",
+      "device 3": "Cloud Servers"
+      },
+    "functions":  {
+      "function 1": "External Communication"
+      },
+    "securityFeatures": {
+      "securityFeature 1": "Remote Monitoring",
+      "securityFeature 2": "Device Software Updates"
+      },
+    "participatingParties": {
+      "party 1": "3rd Party Service Providers",
+      "party 2": "OEM/Vendors"
+      }
+    }
+  }
