@@ -16,116 +16,83 @@
       "version": "0.1"
       }
     },
-  "level 0":  {
-    "levelName": "Level 0 - Process Level",
+  "level 3.1":  {
+    "levelName": "Level 3.1 - Communication Level",
+    "zone": "Operations Zone",
+    "segmented": "level 3.2",
     "type": "level",
+    "comments": "Front End Processor collects data from stations and substations and sends control signals to Stations and Substations",
     "devices": {
-      "deviceType 1": "Sensors",
-      "deviceType 2": "Indicators",
-      "deviceType 3": "Breaker I/O",
-      "deviceType 4": "CT/PT Merging Units",
+      "deviceType 1": "Comms to RC/BA",
+      "deviceType 2": "Comms to Neighboring Entities",
+      "deviceType 3": "Comms between Main and Backup Control Center",
+      "deviceType 4": "Front End Processor",
       "deviceType 5": "NCITs Merging Units"
       },
     "functions":  {
-      "function 1": "Physical Process Interface"
+      "function 1": "Internal Operational Communication"
       },
     "securityFeatures": {
-      "securityFeature 1": "Access Control Policies",
-      "securityFeature 2": "Device Hardening",
-      "securityFeature 3": "Security Logging",
-      "securityFeature 4": "Patch Management",
-      "securityFeature 5": "Malware Protection",
-      "securityFeature 6": "Data Integrity Protection",
-      "securityFeature 7": "IDS/IPS"
+      "securityFeature 1": "Access Control",
+      "securityFeature 2": "Network Monitoring Devices",
+      "securityFeature 3": "Encryption Control",
+      "securityFeature 4": "SIEM",
+      "securityFeature 5": "IDS/IPS"
       },
     "participatingParties": {
       "party 1": "OT Manager",
-      "party 2": "Eng/Designer",
-      "party 3": "Relay Tech",
-      "party 4": "Field Service Tech"
+      "party 2": "Maintenance",
+      "party 3": "OT Services",
+      "party 4": "IT Services",
+      "party 5": "Vendors",
+      "party 6": "EMS Support",
+      "party 7": "Remote Employees"
       }
     },
-  "level 1":  {
-    "levelName": "Level 1 - Subsystem Level",
+  "level 3.2":  {
+    "levelName": "Level 3.2 - Network Control and Database Level",
+    "zone":"Operations Zone",
+    "segmented":"level 3.1",
     "type": "level",
     "devices": {
-      "deviceType 1": "Protection",
-      "deviceType 2": "Bay Controllers",
-      "deviceType 3": "IEDs",
-      "deviceType 4": "Monitoring"
+      "deviceType 1": "SCADA Application Servers",
+      "deviceType 2": "Historian Servers",
+      "deviceType 3": "I/O Servers",
+      "deviceType 4": "Remote Access Server",
+      "deviceType 5": "Database Servers",
+      "deviceType 6": "Situational Awareness"
       },
     "functions":  {
-      "function 1": "Data Acquisition",
-      "function 2": "Telemetry",
-      "function 3": "Process Control"
+      "function 1": "Internal Operational Communication"
       },
     "securityFeatures": {
-      "securityFeature 1": "Access Control Policies",
-      "securityFeature 2": "Device Hardening",
-      "securityFeature 3": "Security Logging",
-      "securityFeature 4": "Patch Management",
-      "securityFeature 5": "Malware Protection",
-      "securityFeature 6": "Data Integrity Protection",
-      "securityFeature 7": "IDS/IPS"
+      "securityFeature 1": "Access Control",
+      "securityFeature 2": "Network Monitoring Devices",
+      "securityFeature 3": "Encryption Control",
+      "securityFeature 4": "SIEM",
+      "securityFeature 5": "IDS/IPS"
       },
     "participatingParties": {
       "party 1": "OT Manager",
-      "party 2": "Eng/Designer",
-      "party 3": "Relay Tech",
-      "party 4": "Field Service Tech"
+      "party 2": "Maintenance",
+      "party 3": "OT Services",
+      "party 4": "IT Services",
+      "party 5": "Vendors",
+      "party 6": "EMS Support",
+      "party 7": "Remote Employees"
       }
     },
-  "level 2":  {
-    "levelName": "Level 2 - Facility Level",
-    "type": "level",
-    "devices": {
-      "deviceType 1": "RTU/Gateways",
-      "deviceType 2": "Local HMIs",
-      "deviceType 3": "Engineering Workstations"
-      },
-    "functions":  {
-      "function 1": "Process Data Conversion",
-      "function 2": "Local Control",
-      "function 3": "Asset Monitoring"
-      },
-    "securityFeatures": {
-      "securityFeature 1": "Access Control Policies",
-      "securityFeature 2": "Device Hardening",
-      "securityFeature 3": "Security Logging",
-      "securityFeature 4": "Patch Management",
-      "securityFeature 5": "Malware Protection",
-      "securityFeature 6": "Data Integrity Protection",
-      "securityFeature 7": "IDS/IPS"
-      },
-    "participatingParties": {
-      "party 1": "OT Manager",
-      "party 2": "Eng/Designer",
-      "party 3": "Relay Tech",
-      "party 4": "Field Service Tech"
-      }
-    },
- "level 2.5 dmz":  {
-    "levelName": "Level 2.5 DMZ",
-    "type": "dmz",
-    "devices": {
-      "deviceType 1": "Historian",
-      "deviceType 2": "Backup Director",
-      "deviceType 3": "Patch Server",
-      "deviceType 4": "Remote Access/Jump Server"
-      },
-    "functions": {},
-    "securityFeatures": {},
-    "participatingParties": {}
-    },
-    "level 3":  {
-    "levelName": "Level 3 - Control Center Level",
+  "level 3.3":  {
+    "levelName": "Level 3.3 - Operator Room",
+    "zone":"Operations Zone",
+    "segmented":"level 3.5 dmz",
     "type": "level",
     "devices": {
       "deviceType 1": "Operator Workstations",
-      "deviceType 2": "SCADA/Application Servers",
-      "deviceType 3": "Database Servers",
-      "deviceType 4": "Domain Controllers",
-      "deviceType 5": "I/O Servers"
+      "deviceType 2": "Domain Controllers",
+      "deviceType 3": "Network Monitoring",
+      "deviceType 4": "HMI/Map Board",
+      "deviceType 5": "Engineering Workstations"
       },
     "functions":  {
       "function 1": "Internal Operational Communication"
@@ -133,36 +100,39 @@
     "securityFeatures": {
       "securityFeature 1": "Access Control Policies",
       "securityFeature 2": "Management and Review",
-      "securityFeature 3": "Network Monitoring Devices",
-      "securityFeature 4": "Encryption Control",
-      "securityFeature 5": "SIEM",
-      "securityFeature 6": "IDS/IPS"
+      "securityFeature 7": "IDS/IPS"
       },
     "participatingParties": {
       "party 1": "OT Manager",
       "party 2": "SCADA",
-      "party 3": "Operations and Maintenance",
+      "party 3": "Operations",
       "party 4": "EMS Support",
-      "party 5": "Remote Employees",
-      "party 6": "OT and IT Services",
-      "party 7": "Vendors"
+      "party 5": "Remote Employees"
       }
     },
-   "level 3.5 dmz":  {
+ "level 3.5 dmz":  {
     "levelName": "Level 3.5 DMZ",
+    "zone": "dmz",
     "type": "dmz",
+    "segmented": ["level 3.3", "level 4"],
     "devices": {
-      "deviceType 1": "Historian",
-      "deviceType 2": "Backup Director",
-      "deviceType 3": "Patch Server",
-      "deviceType 4": "Remote Access/Jump Server"
+      "deviceType 1": "Electronic Access Control",
+      "deviceType 2": "Electronic Access Monitoring",
+      "deviceType 3": "Physical Access Control System",
+      "deviceType 4": "Vulnerability Scanner",
+      "deviceType 5": "Baseline Server",
+      "deviceType 6": "Anti-virus Server",
+      "deviceType 7": "Log Server"
       },
     "functions": {},
-    "securityFeatures": {}
+    "securityFeatures": {},
+    "participatingParties": {}
     },
   "level 4":  {
     "levelName": "Level 4 - Business/Enterprise Level",
+    "zone": "Enterprise Zone",
     "type": "level",
+    "segmented":["level 3.5 dmz", "level 5"],
     "devices": {
       "deviceType 1": "Web Servers",
       "deviceType 2": "Business Servers",
@@ -183,20 +153,11 @@
       "party 3": "Planning"
       }
     },
-   "level 4.5 dmz":  {
-    "levelName": "Level 4.5 DMZ",
-    "type": "dmz",
-    "devices": {
-      "deviceType 1": "Web Servers",
-      "deviceType 2": "Email Servers",
-      "deviceType 3": "Remote Access Server"
-      },
-    "functions": {},
-    "securityFeatures": {}
-    },
   "level 5":  {
-    "levelName": "Level 5 - Internet/Cloud Level",
+    "levelName": "Level 5 - Internet DMZ/Cloud Level",
+    "zone": "Public Zone",
     "type": "level",
+    "segmented": "level 4",
     "devices": {
       "deviceType 1": "Web Servers",
       "deviceType 2": "Email Servers",
