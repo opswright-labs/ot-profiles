@@ -1,9 +1,9 @@
 {
-  "title": "OT Profiles (OTP) - Substation",
+  "title": "OT Profiles (OTP) - Generation",
   "specVersion": "0.1",
-  "serialNumber": "urn:uuid:5cc3d7d2-e659-4d07-8416-6a164dfc3a03",
+  "serialNumber": "urn:uuid:a0ce90b3-7f03-466b-a578-3501043999bc",
   "profileCategory": "Electric Power",
-  "profileType": "Substation",
+  "profileType": "Generation",
   "version": "0.1",
   "comment": "Created from examples at https://secure-energy.inl.gov/secureenergy/wp-content/uploads/sites/6/2022/07/SEI-ETF-Reference-Architecture-for-Electric-Energy-OT-and-Profiles.pdf",
   "license": "Apache 2.0",
@@ -24,7 +24,7 @@
       "deviceType 2": "Indicators",
       "deviceType 3": "Breaker I/O",
       "deviceType 4": "CT/PT Merging Units",
-      "deviceType 5": "NCITs Merging Units"
+      "deviceType 5": "Actuators"
       },
     "functions":  {
       "function 1": "Physical Process Interface"
@@ -40,24 +40,30 @@
       },
     "participatingParties": {
       "party 1": "OT Manager",
-      "party 2": "Eng/Designer",
-      "party 3": "Relay Tech",
-      "party 4": "Field Service Tech"
+      "party 2": "Operators",
+      "party 3": "Eng/Designer",
+      "party 4": "Relay Tech",
+      "party 5": "Field Service Tech"
       }
     },
   "level 1":  {
-    "levelName": "Level 1 - Subsystem Level",
+    "levelName": "Level 1 - Subsystem Level (Generating Unit)",
     "type": "level",
     "devices": {
       "deviceType 1": "Protection",
-      "deviceType 2": "Bay Controllers",
-      "deviceType 3": "IEDs",
-      "deviceType 4": "Monitoring"
+      "deviceType 2": "DCS/TCS",
+      "deviceType 3": "Local HMIs",
+      "deviceType 4": "PLCs",
+      "deviceType 5": "IEDs",
+      "deviceType 6": "Subsystem Controllers",
+      "deviceType 7": "Engineering Workstation",
+      "deviceType 8": "Monitoring"
       },
     "functions":  {
       "function 1": "Data Acquisition",
       "function 2": "Telemetry",
-      "function 3": "Process Control"
+      "function 3": "Local Control",
+      "function 4": "Process Control"
       },
     "securityFeatures": {
       "securityFeature 1": "Access Control Policies",
@@ -70,22 +76,21 @@
       },
     "participatingParties": {
       "party 1": "OT Manager",
-      "party 2": "Eng/Designer",
-      "party 3": "Relay Tech",
-      "party 4": "Field Service Tech"
+      "party 2": "Operators",
+      "party 3": "Eng/Designer",
+      "party 4": "Relay Tech",
+      "party 5": "Field Service Tech"
       }
     },
   "level 2":  {
-    "levelName": "Level 2 - Facility Level",
+    "levelName": "Level 2 - Facility Level (Plant/Site)",
     "type": "level",
     "devices": {
       "deviceType 1": "RTU/Gateways",
-      "deviceType 2": "Local HMIs",
-      "deviceType 3": "Engineering Workstations"
+      "deviceType 2": "Historian"
       },
     "functions":  {
       "function 1": "Process Data Conversion",
-      "function 2": "Local Control",
       "function 3": "Asset Monitoring"
       },
     "securityFeatures": {
@@ -99,9 +104,10 @@
       },
     "participatingParties": {
       "party 1": "OT Manager",
-      "party 2": "Eng/Designer",
-      "party 3": "Relay Tech",
-      "party 4": "Field Service Tech"
+      "party 2": "Operators",
+      "party 3": "Eng/Designer",
+      "party 4": "Relay Tech",
+      "party 5": "Field Service Tech"
       }
     },
  "level 2.5 dmz":  {
@@ -166,7 +172,7 @@
     "devices": {
       "deviceType 1": "Web Servers",
       "deviceType 2": "Business Servers",
-      "deviceType 3": "Enterprise Desktops",
+      "deviceType 3": "Private Cloud Servers",
       "deviceType 4": "Domain Controllers"
       },
     "functions":  {
@@ -200,7 +206,7 @@
     "devices": {
       "deviceType 1": "Web Servers",
       "deviceType 2": "Email Servers",
-      "deviceType 3": "Cloud Servers"
+      "deviceType 3": "Public Cloud Servers"
       },
     "functions":  {
       "function 1": "External Communication"
