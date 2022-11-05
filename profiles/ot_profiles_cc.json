@@ -19,7 +19,7 @@
   "level 3.1":  {
     "levelName": "Level 3.1 - Communication Level",
     "zone": "Operations Zone",
-    "segmented": "level 3.2",
+    "segmented": ["level 3.2"],
     "type": "level",
     "comments": "Front End Processor collects data from stations and substations and sends control signals to Stations and Substations",
     "devices": {
@@ -52,7 +52,7 @@
   "level 3.2":  {
     "levelName": "Level 3.2 - Network Control and Database Level",
     "zone":"Operations Zone",
-    "segmented":"level 3.1",
+    "segmented": ["level 3.1"],
     "type": "level",
     "devices": {
       "deviceType 1": "SCADA Application Servers",
@@ -85,7 +85,7 @@
   "level 3.3":  {
     "levelName": "Level 3.3 - Operator Room",
     "zone":"Operations Zone",
-    "segmented":"level 3.5 dmz",
+    "segmented": ["level 3.5 dmz"],
     "type": "level",
     "devices": {
       "deviceType 1": "Operator Workstations",
@@ -157,7 +157,7 @@
     "levelName": "Level 5 - Internet DMZ/Cloud Level",
     "zone": "Public Zone",
     "type": "level",
-    "segmented": "level 4",
+    "segmented": ["level 4"],
     "devices": {
       "deviceType 1": "Web Servers",
       "deviceType 2": "Email Servers",
