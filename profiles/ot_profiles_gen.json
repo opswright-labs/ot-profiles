@@ -18,6 +18,7 @@
     },
   "level 0":  {
     "levelName": "Level 0 - Process Level",
+    "zone": "Physical Assets Zone",
     "type": "level",
     "devices": {
       "deviceType 1": "Sensors",
@@ -48,6 +49,7 @@
     },
   "level 1":  {
     "levelName": "Level 1 - Subsystem Level (Generating Unit)",
+    "zone": "Physical Assets Zone",
     "type": "level",
     "devices": {
       "deviceType 1": "Protection",
@@ -84,6 +86,7 @@
     },
   "level 2":  {
     "levelName": "Level 2 - Facility Level (Plant/Site)",
+    "zone": "Physical Assets Zone",
     "type": "level",
     "devices": {
       "deviceType 1": "RTU/Gateways",
@@ -112,6 +115,7 @@
     },
  "level 2.5 dmz":  {
     "levelName": "Level 2.5 DMZ",
+    "zone": "dmz",
     "type": "dmz",
     "devices": {
       "deviceType 1": "Historian",
@@ -125,6 +129,7 @@
     },
     "level 3":  {
     "levelName": "Level 3 - Control Center Level",
+    "zone": "Operations Zone",
     "type": "level",
     "devices": {
       "deviceType 1": "Operator Workstations",
@@ -156,6 +161,7 @@
     },
    "level 3.5 dmz":  {
     "levelName": "Level 3.5 DMZ",
+    "zone": "dmz",
     "type": "dmz",
     "devices": {
       "deviceType 1": "Historian",
@@ -168,6 +174,7 @@
     },
   "level 4":  {
     "levelName": "Level 4 - Business/Enterprise Level",
+    "zone": "Enterprise Zone",
     "type": "level",
     "devices": {
       "deviceType 1": "Web Servers",
@@ -191,6 +198,7 @@
     },
    "level 4.5 dmz":  {
     "levelName": "Level 4.5 DMZ",
+    "zone": "dmz",
     "type": "dmz",
     "devices": {
       "deviceType 1": "Web Servers",
@@ -202,6 +210,7 @@
     },
   "level 5":  {
     "levelName": "Level 5 - Internet/Cloud Level",
+    "zone": "Public Zone",
     "type": "level",
     "devices": {
       "deviceType 1": "Web Servers",
