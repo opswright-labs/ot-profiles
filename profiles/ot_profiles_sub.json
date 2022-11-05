@@ -20,11 +20,11 @@
     "levelName": "Level 0 - Process Level",
     "type": "level",
     "devices": {
-      "device 1": "Sensors",
-      "device 2": "Indicators",
-      "device 3": "Breaker I/O",
-      "device 4": "CT/PT Merging Units",
-      "device 5": "NCITs Merging Units"
+      "deviceType 1": "Sensors",
+      "deviceType 2": "Indicators",
+      "deviceType 3": "Breaker I/O",
+      "deviceType 4": "CT/PT Merging Units",
+      "deviceType 5": "NCITs Merging Units"
       },
     "functions":  {
       "function 1": "Physical Process Interface"
@@ -49,9 +49,9 @@
     "levelName": "Level 1 - Subsystem Level",
     "type": "level",
     "devices": {
-      "device 1": "Protection Bay Controllers",
-      "device 2": "IEDs",
-      "device 3": "Monitoring"
+      "deviceType 1": "Protection Bay Controllers",
+      "deviceType 2": "IEDs",
+      "deviceType 3": "Monitoring"
       },
     "functions":  {
       "function 1": "Data Acquisition",
@@ -78,9 +78,9 @@
     "levelName": "Level 2 - Facility Level",
     "type": "level",
     "devices": {
-      "device 1": "RTU/Gateways",
-      "device 2": "Local HMIs",
-      "device 3": "Engineering Workstations"
+      "deviceType 1": "RTU/Gateways",
+      "deviceType 2": "Local HMIs",
+      "deviceType 3": "Engineering Workstations"
       },
     "functions":  {
       "function 1": "Process Data Conversion",
@@ -107,10 +107,10 @@
     "levelName": "Level 2.5 DMZ",
     "type": "dmz",
     "devices": {
-      "device 1": "Historian",
-      "device 2": "Backup Director",
-      "device 3": "Patch Server",
-      "device 4": "Remote Access/Jump Server"
+      "deviceType 1": "Historian",
+      "deviceType 2": "Backup Director",
+      "deviceType 3": "Patch Server",
+      "deviceType 4": "Remote Access/Jump Server"
       },
     "functions": {},
     "securityFeatures": {},
@@ -120,11 +120,11 @@
     "levelName": "Level 3 - Control Center Level",
     "type": "level",
     "devices": {
-      "device 1": "Operator Workstations",
-      "device 2": "SCADA/Application Servers",
-      "device 3": "Database Servers",
-      "device 4": "Domain Controllers",
-      "device 5": "I/O Servers"
+      "deviceType 1": "Operator Workstations",
+      "deviceType 2": "SCADA/Application Servers",
+      "deviceType 3": "Database Servers",
+      "deviceType 4": "Domain Controllers",
+      "deviceType 5": "I/O Servers"
       },
     "functions":  {
       "function 1": "Internal Operational Communication"
@@ -151,10 +151,10 @@
     "levelName": "Level 3.5 DMZ",
     "type": "dmz",
     "devices": {
-      "device 1": "Historian",
-      "device 2": "Backup Director",
-      "device 3": "Patch Server",
-      "device 4": "Remote Access/Jump Server"
+      "deviceType 1": "Historian",
+      "deviceType 2": "Backup Director",
+      "deviceType 3": "Patch Server",
+      "deviceType 4": "Remote Access/Jump Server"
       },
     "functions": {},
     "securityFeatures": {}
@@ -163,10 +163,10 @@
     "levelName": "Level 4 - Business/Enterprise Level",
     "type": "level",
     "devices": {
-      "device 1": "Web Servers",
-      "device 2": "Business Servers",
-      "device 3": "Enterprise Desktops",
-      "device 4": "Domain Controllers"
+      "deviceType 1": "Web Servers",
+      "deviceType 2": "Business Servers",
+      "deviceType 3": "Enterprise Desktops",
+      "deviceType 4": "Domain Controllers"
       },
     "functions":  {
       "function 1": "Internal Business Communication"
@@ -186,9 +186,9 @@
     "levelName": "Level 4.5 DMZ",
     "type": "dmz",
     "devices": {
-      "device 1": "Web Servers",
-      "device 2": "Email Servers",
-      "device 3": "Remote Access Server"
+      "deviceType 1": "Web Servers",
+      "deviceType 2": "Email Servers",
+      "deviceType 3": "Remote Access Server"
       },
     "functions": {},
     "securityFeatures": {}
@@ -197,9 +197,9 @@
     "levelName": "Level 5 - Internet/Cloud Level",
     "type": "level",
     "devices": {
-      "device 1": "Web Servers",
-      "device 2": "Email Servers",
-      "device 3": "Cloud Servers"
+      "deviceType 1": "Web Servers",
+      "deviceType 2": "Email Servers",
+      "deviceType 3": "Cloud Servers"
       },
     "functions":  {
       "function 1": "External Communication"
