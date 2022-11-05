@@ -49,10 +49,9 @@
     "levelName": "Level 1 - Subsystem Level",
     "type": "level",
     "devices": {
-      "device 1": "Protection",
-      "device 2": "Bay Controllers",
-      "device 3": "IEDs",
-      "device 4": "Monitoring"
+      "device 1": "Protection Bay Controllers",
+      "device 2": "IEDs",
+      "device 3": "Monitoring"
       },
     "functions":  {
       "function 1": "Data Acquisition",
