@@ -1,9 +1,9 @@
 {
-  "title": "OT Profiles (OTP) - Substation",
+  "title": "OT Profiles (OTP) - Distributed Energy Resources",
   "specVersion": "0.1",
-  "serialNumber": "urn:uuid:5cc3d7d2-e659-4d07-8416-6a164dfc3a03",
+  "serialNumber": "urn:uuid:7c8b9480-0d0f-4da5-a85c-862a12dfe7e0",
   "profileCategory": "Electric Power",
-  "profileType": "Substation",
+  "profileType": "DER",
   "version": "0.1",
   "comment": "Created from examples at https://secure-energy.inl.gov/secureenergy/wp-content/uploads/sites/6/2022/07/SEI-ETF-Reference-Architecture-for-Electric-Energy-OT-and-Profiles.pdf",
   "license": "Apache 2.0",
@@ -20,27 +20,23 @@
     "levelName": "Level 0 - Process Level",
     "type": "level",
     "devices": {
-      "device 1": "Sensors",
+      "device 1": "Merging Units PMU",
       "device 2": "Indicators",
       "device 3": "Breaker I/O",
-      "device 4": "CT/PT Merging Units",
-      "device 5": "NCITs Merging Units"
+      "device 4": "CT/PT Merging Units"
       },
     "functions":  {
       "function 1": "Physical Process Interface"
       },
     "securityFeatures": {
-      "securityFeature 1": "Access Control Policies",
-      "securityFeature 2": "Device Hardening",
-      "securityFeature 3": "Security Logging",
-      "securityFeature 4": "Patch Management",
-      "securityFeature 5": "Malware Protection",
-      "securityFeature 6": "Data Integrity Protection",
-      "securityFeature 7": "IDS/IPS"
+      "securityFeature 1": "Local Station SCADA Network Monitoring",
+      "securityFeature 2": "Local Device Monitoring",
+      "securityFeature 3": "Ground State Truth Side Channel Monitoring",
+      "securityFeature 4": "IDS/IPS"
       },
     "participatingParties": {
       "party 1": "OT Manager",
-      "party 2": "Eng/Designer",
+      "party 2": "Solar farm/wind farm/hydro site operator",
       "party 3": "Relay Tech",
       "party 4": "Field Service Tech"
       }
@@ -49,27 +45,29 @@
     "levelName": "Level 1 - Subsystem Level",
     "type": "level",
     "devices": {
-      "device 1": "Protection Bay Controllers",
-      "device 2": "IEDs",
-      "device 3": "Monitoring"
+      "device 1": "Protective Rellays",
+      "device 2": "PLCs",
+      "device 3": "IEDs",
+      "device 4": "Substation Controllers",
+      "device 5": "Engineering Workstations",
+      "device 6": "Local HMIs",
+      "device 7": "Monitoring"
       },
     "functions":  {
       "function 1": "Data Acquisition",
-      "function 2": "Telemtry",
-      "function 3": "Process Control"
+      "function 2": "Telemetry",
+      "function 3": "Local Control",
+      "function 4": "Process Control"
       },
     "securityFeatures": {
-      "securityFeature 1": "Access Control Policies",
-      "securityFeature 2": "Device Hardening",
-      "securityFeature 3": "Security Logging",
-      "securityFeature 4": "Patch Management",
-      "securityFeature 5": "Malware Protection",
-      "securityFeature 6": "Data Integrity Protection",
-      "securityFeature 7": "IDS/IPS"
+      "securityFeature 1": "Local Station SCADA Network Monitoring",
+      "securityFeature 2": "Local Device Monitoring",
+      "securityFeature 3": "Ground State Truth Side Channel Monitoring",
+      "securityFeature 4": "IDS/IPS"
       },
     "participatingParties": {
       "party 1": "OT Manager",
-      "party 2": "Eng/Designer",
+      "party 2": "Solar farm/wind farm/hydro site operator",
       "party 3": "Relay Tech",
       "party 4": "Field Service Tech"
       }
@@ -80,7 +78,9 @@
     "devices": {
       "device 1": "RTU/Gateways",
       "device 2": "Local HMIs",
-      "device 3": "Engineering Workstations"
+      "device 3": "Net Metering",
+      "device 4": "Automation Controllers",
+      "device 5": "Engineering Workstations"
       },
     "functions":  {
       "function 1": "Process Data Conversion",
@@ -88,17 +88,14 @@
       "function 3": "Asset Monitoring"
       },
     "securityFeatures": {
-      "securityFeature 1": "Access Control Policies",
-      "securityFeature 2": "Device Hardening",
-      "securityFeature 3": "Security Logging",
-      "securityFeature 4": "Patch Management",
-      "securityFeature 5": "Malware Protection",
-      "securityFeature 6": "Data Integrity Protection",
-      "securityFeature 7": "IDS/IPS"
+      "securityFeature 1": "Local Station SCADA Network Monitoring",
+      "securityFeature 2": "Local Device Monitoring",
+      "securityFeature 3": "Ground State Truth Side Channel Monitoring",
+      "securityFeature 4": "IDS/IPS"
       },
     "participatingParties": {
       "party 1": "OT Manager",
-      "party 2": "Eng/Designer",
+      "party 2": "Solar farm/wind farm/hydro site operator",
       "party 3": "Relay Tech",
       "party 4": "Field Service Tech"
       }
@@ -165,7 +162,7 @@
     "devices": {
       "device 1": "Web Servers",
       "device 2": "Business Servers",
-      "device 3": "Enterprise Desktops",
+      "device 3": "Private Cloud Servers",
       "device 4": "Domain Controllers"
       },
     "functions":  {
@@ -197,9 +194,8 @@
     "levelName": "Level 5 - Internet/Cloud Level",
     "type": "level",
     "devices": {
-      "device 1": "Web Servers",
-      "device 2": "Email Servers",
-      "device 3": "Cloud Servers"
+      "device 1": "DNS Servers",
+      "device 2": "Public Cloud Servers"
       },
     "functions":  {
       "function 1": "External Communication"
